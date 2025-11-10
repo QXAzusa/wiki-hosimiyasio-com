@@ -11,9 +11,8 @@ const config = {
   url: 'https://www.hosimiyasio.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: '/img/icon_navbar.ico',
-
+  
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   //organizationName: 'facebook', // Usually your GitHub org/user name.
@@ -22,6 +21,12 @@ const config = {
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
+  markdown:{
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'throw'
+    }
+  },
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
