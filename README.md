@@ -1,4 +1,4 @@
-# Source Code Of www.hosimiyasio.com
+# Source Code Of wiki.hosimiyasio.com
 Based on Docusaurus modifications
 ## Branchs
 ### dev
@@ -9,7 +9,7 @@ Branch use to build production version
 ## Contact
 Have any question? 
 
-Email to [git@qxazusa.xyz](mailto:git@qxazusa.xyz) or use issue.
+Email to [website@qxazusa.xyz](mailto:website@qxazusa.xyz) or use issue.
 
 
 ## JetBrains Open Source License
