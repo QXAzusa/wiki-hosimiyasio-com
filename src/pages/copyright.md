@@ -13,8 +13,6 @@ The site logo and favicon are also copyrighted by [星宫汐](https://page.hosim
 ### MIT License
 [Docusaurus](https://docusaurus.io/) Site Builder developed by Meta Platforms, Inc
 
-[Ant Design Landing](https://landing.ant.design) Homepage solution developed by Ant Group's [Ant Design](https://ant-design.antgroup.com) team
-
 [stephane-monnot/react-vertical-timeline](https://github.com/stephane-monnot/react-vertical-timeline) used to build the timeline on the [tachie](../tachie) page
 
 ### ISC License
