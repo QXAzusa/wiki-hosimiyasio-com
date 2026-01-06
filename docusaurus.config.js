@@ -6,14 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '汐明之恋 - 非官方主页',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://www.hosimiyasio.com',
+  title: '星宫汐 - Wiki',
+  tagline: '',
+  url: 'https://wiki.hosimiyasio.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: '/img/icon_navbar.ico',
-
+  
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   //organizationName: 'facebook', // Usually your GitHub org/user name.
@@ -22,6 +21,12 @@ const config = {
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
+  markdown:{
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'throw'
+    }
+  },
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
@@ -52,7 +57,7 @@ const config = {
         sitemap: {
           changefreq: 'daily',
           priority: 0.5,
-          ignorePatterns: ['/article/**','/archive-page/**','/docs/**','/about','/wiki','/copyright','/fansub-recruit','/tachie','/timeline'],
+          ignorePatterns: ['/article/**','/archive-page/**','/docs/**','/about','/copyright','/fansub-recruit','/tachie','/timeline','/wiki'],
           filename: 'sitemap.xml',
         }
       }),
@@ -63,12 +68,13 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: '汐明之恋 - Unofficial',
+        title: '星宫汐 - Wiki',
         logo: {
           alt: 'Site Logo',
           src: '/img/icon_navbar.ico',
         },
         items: [
+          {label:'文章', to:'/article', position: 'left'},
           {label:'历程',to:'/timeline'},
           {label: '立绘', to:'/tachie', position: 'left'},
         ],
@@ -79,25 +85,9 @@ const config = {
           {
             title: '网站地图',
             items: [
+              {label:'文章',to:'/article'},
               {label:'历程',to:'/timeline'},
               {label:'立绘',to:'/tachie'}
-            ],
-          },
-          {
-            title: '官方相关',
-            items: [
-              {
-                label: '官方主页',
-                href: 'https://page.hosimiyasio.com/outlinks.html?target=https://hosimiyasio-official.com',
-              },
-              {
-                label: '哔哩哔哩-主页',
-                href: 'https://page.hosimiyasio.com/outlinks.html?target=https://space.bilibili.com/402417817',
-              },
-              {
-                label: '哔哩哔哩-直播间',
-                href: 'https://page.hosimiyasio.com/outlinks.html?target=https://live.bilibili.com/22047448',
-              }
             ],
           },
           {
@@ -135,12 +125,8 @@ const config = {
     }),
     scripts: [
     ],
-    clientModules: [require.resolve('./inject-lodash.js')],
-    plugins: [
-      [
-        "docusaurus-plugin-less",{lessOptions:{javascriptEnabled: true}}
-      ]
-    ],
+    clientModules: [],
+    plugins: [],
 };
 
 module.exports = config;
