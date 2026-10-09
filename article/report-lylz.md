@@ -6,7 +6,7 @@ authors: [hsio,translator_unknown]
 tags: ['事件报告']
 ---
 2021字幕组事件
-<!--truncate-->
+{/* truncate */}
 ## 原文
 いつも星宮汐を応援してくれるみんなへ
 
